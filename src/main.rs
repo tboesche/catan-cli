@@ -16,9 +16,9 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut beginner_game = Game::from_template(template.clone())?;
     let mut game_parameters = beginner_game.parameters.clone();
     
-    // for i in 0..4 {
-    //     game_parameters.v_players[i] = Player::new_classic(i as u32);
-    // }
+    for i in 0..4 {
+        game_parameters.v_players[i] = Player::new_classic(i as u32);
+    }
 
     // game_parameters.v_players[0] = Player::new_simple_nn(0); 
 
