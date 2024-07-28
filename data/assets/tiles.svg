@@ -1,0 +1,25 @@
+<svg width="1500" height="1400" viewBox="0 0 1500 1400" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1500" height="1400" opacity="1" fill="#E6E2D5" stroke="none"/>
+<text x="750" y="105" dy="0.76em" text-anchor="middle" font-family="Dela Gothic One" font-size="80.64516129032258" opacity="0.2" fill="#795548">
+カタンアイランド
+</text>
+<polygon opacity="1" fill="#E6E2D5" points="658,730 711,645 817,645 870,730 817,815 711,815 " id="tile-0"/>
+<polygon opacity="1" fill="#FFDFBF" points="711,645 658,560 489,583 447,730 553,730 658,730 " id="tile-1"/>
+<polygon opacity="1" fill="#DCF5DA" points="817,645 870,560 764,436 605,475 658,560 711,645 " id="tile-2"/>
+<polygon opacity="1" fill="#BCD1BA" points="870,730 976,730 1039,583 923,475 870,560 817,645 " id="tile-3"/>
+<polygon opacity="1" fill="#FFFDD4" points="817,815 870,900 1039,877 1081,730 976,730 870,730 " id="tile-4"/>
+<polygon opacity="1" fill="#BCCBD4" points="711,815 658,900 764,1024 923,985 870,900 817,815 " id="tile-5"/>
+<polygon opacity="1" fill="#BCD1BA" points="553,730 658,730 711,815 658,900 605,985 489,877 " id="tile-6"/>
+<polygon opacity="1" fill="#BCCBD4" points="489,583 398,534 267,562 235,730 341,730 447,730 " id="tile-7"/>
+<polygon opacity="1" fill="#DCF5DA" points="658,560 605,475 553,390 359,415 398,534 489,583 " id="tile-8"/>
+<polygon opacity="1" fill="#BCD1BA" points="764,436 764,338 672,247 500,305 553,390 605,475 " id="tile-9"/>
+<polygon opacity="1" fill="#FFDFBF" points="870,560 923,475 976,390 856,247 764,338 764,436 " id="tile-10"/>
+<polygon opacity="1" fill="#BCCBD4" points="1039,583 1130,534 1169,415 1028,305 976,390 923,475 " id="tile-11"/>
+<polygon opacity="1" fill="#DCF5DA" points="976,730 1081,730 1187,730 1261,562 1130,534 1039,583 " id="tile-12"/>
+<polygon opacity="1" fill="#DCF5DA" points="1039,877 1130,926 1261,898 1293,730 1187,730 1081,730 " id="tile-13"/>
+<polygon opacity="1" fill="#FFFDD4" points="870,900 923,985 976,1070 1169,1045 1130,926 1039,877 " id="tile-14"/>
+<polygon opacity="1" fill="#FFDFBF" points="764,1024 764,1122 856,1213 1028,1155 976,1070 923,985 " id="tile-15"/>
+<polygon opacity="1" fill="#BCD1BA" points="658,900 605,985 553,1070 672,1213 764,1122 764,1024 " id="tile-16"/>
+<polygon opacity="1" fill="#FFFDD4" points="489,877 398,926 359,1045 500,1155 553,1070 605,985 " id="tile-17"/>
+<polygon opacity="1" fill="#FFFDD4" points="553,730 447,730 341,730 267,898 398,926 489,877 " id="tile-18"/>
+</svg>
