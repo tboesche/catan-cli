@@ -12,7 +12,7 @@ pub fn get_pretty_action(action: &Action, game: &Game, ui_parameters: &UIBoardPa
     
     match action {
         Action::SetUpMove(settle_node, road_end) => {
-            format!("Build settlement on {:?} and road to {:?},", nodes[*settle_node as usize].coords_conc, nodes[*road_end as usize].coords_conc)
+            format!("Build settlement on {:?} and road to {:?},", nodes[*settle_node as usize].coords_conc.unwrap(), nodes[*road_end as usize].coords_conc.unwrap())
         },
         Action::Robber(i_robber, i_tile, i_victim) => {
             format!("Move robber {:?} to tile {:?} and steal from player {:?},", i_robber, i_tile, i_victim)
@@ -36,7 +36,7 @@ pub fn get_pretty_action(action: &Action, game: &Game, ui_parameters: &UIBoardPa
                     format!("Move robber {:?} to tile {:?} and steal from player {:?}", i_robber, i_tile, i_victim)
                 },
                 CardType::RoadsCard(first_start, first_end, second_start, second_end) => {
-                    format!("Play roads card and build roads from {:?} to {:?} and from {:?} to {:?},", nodes[*first_start as usize].coords_conc,nodes[*first_end as usize].coords_conc, nodes[*second_start as usize].coords_conc,nodes[*second_end as usize].coords_conc)
+                    format!("Play roads card and build roads from {:?} to {:?} and from {:?} to {:?},", nodes[*first_start as usize].coords_conc.unwrap(),nodes[*first_end as usize].coords_conc.unwrap(), nodes[*second_start as usize].coords_conc.unwrap(),nodes[*second_end as usize].coords_conc.unwrap())
                 },
                 CardType::PlentyCard(first_resource, second_resource) => {
                     let names = &ui_parameters.v_resource_names;
@@ -87,15 +87,15 @@ pub fn get_pretty_action(action: &Action, game: &Game, ui_parameters: &UIBoardPa
         },
         Action::BuildRoad(start_node, end_node) => {
             // let nodes = &game.round.board.nodes;
-            format!("Build road from {:?} to {:?},", nodes[*start_node as usize].coords_conc, nodes[*end_node as usize].coords_conc)
+            format!("Build road from {:?} to {:?},", nodes[*start_node as usize].coords_conc.unwrap(), nodes[*end_node as usize].coords_conc.unwrap())
         },
         Action::BuildSettlement(settle_node) => {
             // let nodes = &game.round.board.nodes;
-            format!("Build settlement on {:?},", nodes[*settle_node as usize].coords_conc)
+            format!("Build settlement on {:?},", nodes[*settle_node as usize].coords_conc.unwrap())
         },
         Action::BuildCity(city_node) => {
             // let nodes = &game.round.board.nodes;
-            format!("Build city on {:?},", nodes[*city_node as usize].coords_conc)
+            format!("Build city on {:?},", nodes[*city_node as usize].coords_conc.unwrap())
         },
         Action::BuyDevCard => {
             "Buy a development card".to_string()
